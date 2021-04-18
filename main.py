@@ -38,14 +38,14 @@ def run():
 
     #Others- Experimental
     #acts =player.cmcts_act(env,100,20,do_ns=True,sel_type='rave_novelty',update_type ='amaf')
-    #acts =player.cmcts_act(env,1000,50,do_ns=True,sel_type='avg_novelty')
+    acts =player.cmcts_act(env,1000,50,do_ns=True,sel_type='avg_novelty')
     #acts =player.rhea_act(env,it=300,pop_evolutions=5,pop_num=5,rollout_limit=15,mutation_prob = 0.2,
     #                      do_ns=True,run_type=3)
     
     #exp
     #acts =player.cmcts_act(env,300,30,do_ns=True,sel_type='avg_novelty')
-    acts =player.rhea_act(env,it=1,pop_evolutions=100,pop_num=10,rollout_limit=30,mutation_prob = 0.07,
-                          do_ns=True,run_type=3)
+    #acts =player.rhea_act(env,it=1,pop_evolutions=100,pop_num=10,rollout_limit=30,mutation_prob = 0.07,
+    #                      do_ns=True,run_type=3)
     #acts =player.rhea_act(env,it=1,pop_evolutions=2000,pop_num=1,rollout_limit=30,mutation_prob = 0.2,
     #                      do_ns=True,run_type=3,pop_tournment=2)
     
