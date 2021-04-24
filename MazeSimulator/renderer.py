@@ -13,7 +13,7 @@ if colab_use:
     import os, sys
     # set SDL to use the dummy NULL video driver, 
     # so it doesn't need a windowing system.
-    os.environ["SDL_VIDEODRIVER"] = "dummy"
+    #os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 
 WHITE = (255,255,255)
@@ -96,7 +96,7 @@ class Renderer():
         self.render_pois(env.pois)
         self.render_goal(env.goal)
         #self.render_aoi()
-        pygame.display.update() 
+        #pygame.display.update() 
         
         if colab_use:
             #convert image so it can be displayed in OpenCV
